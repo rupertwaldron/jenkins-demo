@@ -28,7 +28,7 @@ pipelineJob('emoji-translator') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/rupertwaldron/spring-boot-api-example'
+                        url 'https://github.com/rupertwaldron/emoji-translator'
                     }
                     branch 'master'
                 }
