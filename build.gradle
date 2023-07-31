@@ -1,7 +1,7 @@
 plugins {
     id 'base'
-    id 'com.palantir.docker' version '0.31.0'
-    id 'com.palantir.docker-run' version '0.31.0'
+    id 'com.palantir.docker' version '0.35.0'
+    id 'com.palantir.docker-run' version '0.35.0'
     id 'pl.allegro.tech.build.axion-release' version '1.13.6'
 }
 
@@ -18,4 +18,9 @@ dockerRun {
     ports '8080:8080'
     clean true
     daemonize false
+}
+
+wrapper {
+    gradleVersion '8.1.1'
+    distributionType Wrapper.DistributionType.ALL
 }
