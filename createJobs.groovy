@@ -22,3 +22,18 @@ pipelineJob('theme-park-job') {
     }
 }
 
+pipelineJob('emoji-translator') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/rupertwaldron/spring-boot-api-example'
+                    }
+                    branch 'master'
+                }
+            }
+        }
+    }
+}
+
